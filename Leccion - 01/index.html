@@ -9,9 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
-        .textVerde {
+        .greenText {
             color: green;
         }
+
+        .boldText {
+            font-weight: bold;
+            color: red;
+        }
+
     </style>
 
     <title>Leccion 01</title>
@@ -24,9 +30,17 @@
         <li>Hola</li>
     </ul>
 
+    <ol>
+        <li>Hola pero en rojo</li>
+        <li>Hola pero en rojo</li>
+        <li>Hola pero en rojo</li>
+    </ol>
+
     <script>
         $(document).ready(function() {
-            $("ul").addClass("textVerde");
+            $("ul").addClass("greenText");
+
+            $("ol").addClass("boldText");
         });
     </script>
     
